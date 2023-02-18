@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 13</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 0</h2>
+   <script>
+      let a = parseFloat(prompt("введіть значення a", "0"));
+let b = parseFloat(prompt("введіть значення b", "0"));
+let c = parseFloat(prompt("введіть значення c", "0"));
+let resultS1 = a + 12 + b;
+
+let resulTrhee = Math.pow(((a + b) * c) , 1/3) ;
+let resultS3 = resulTrhee.toFixed(1);
+
+let resultS2 = Math.sqrt((a + b) / (2 * a));
+
+let resultFour = Math.sin(a / -b);
+let resultS4 = resultFour.toFixed(1)
+
+
+document.write(`
+<table>
+<tr>
+<th>S1</th>
+<th>S2</th>
+<th>S3</th>
+<th>S4</th>
+</tr>
+<tr>
+<td>  ${resultS1}</td>
+<td>  ${resultS2}</td>
+<td>  ${resultS3}</td>
+<td> ${resultS4}</td>
+</tr>
+</table>`);
+   </script>
+
+      </main>
+   
+
+</div>
+</body>
+</html>
