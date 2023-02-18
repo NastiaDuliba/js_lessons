@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 2</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 6</h2>
+   <script>
+  
+  let priceFirstProduct = parseFloat(prompt("Введіть ціну першого продукта","0"));
+  let quantityFirstProduct = parseFloat(prompt("Введіть кількісь цього продукту","0"))
+  let priceSecondProduct = parseFloat(prompt("Введіть ціну другого продукта", "0"))
+  let quantitySecondProduct = parseFloat(prompt("Введіть кількісь цього продукту", "0"))
+  let priceThirdProduct = parseFloat(prompt("Введіть ціну третього продукта", "0"))
+  let quantityThirdProduct = parseFloat(prompt("Введіть кількісь цього продукту", "0"))
+  let sumFirstProducts = priceFirstProduct * quantityFirstProduct;
+  let sumSecondProducts = priceSecondProduct * quantitySecondProduct;
+  let sumThirdProducts = priceThirdProduct * quantityThirdProduct;
+  console.log(sumFirstProducts);
+  console.log(sumSecondProducts);
+  console.log(sumThirdProducts);
+  let totalAmount = sumFirstProducts + sumSecondProducts + sumThirdProducts;
+  document.write(`    <div class="shop-receip">
+         <div class="shop-receip__header">
+            <h1>Магазин "В НАСТІ"</h1>
+            <p>Україна. Львівська область</p>
+            <p>Вулиця Любінська 57</p>
+         </div>
+         <div class="shop-receip__products products-shop-receip">
+            <div class="products-shop-receip__price">
+               <div class="quantityshop-receip__column">
+               <div class="shop-receip__item_01">
+                  Ціна першого продукту 
+               </div>
+               <div class="quantityshop-receip__numeric">
+                ${priceFirstProduct}
+               </div>
+            </div>
+            <div class="quantityshop-receip__column">
+               <div class="shop-receip__item_01">
+                  Ціна другого продукту
+               </div>
+               <div class="quantityshop-receip__numeric">
+                 ${priceSecondProduct}
+               </div>
+            </div>
+            <div class="quantityshop-receip__column">
+               <div class="shop-receip__item_01">
+                  Ціна третього продукту
+               </div>
+               <div class="quantityshop-receip__numeric">
+                 ${priceThirdProduct}
+               </div>
+            </div>
+            </div>
+            <div class="shop-receip__quantity quantityshop-receip">
+               <div class="quantityshop-receip__item_01">
+                  ${quantityFirstProduct} </div>
+               <div class="quantityshop-receip__item_02">
+                  ${quantitySecondProduct} </div>
+               <div class="quantityshop-receip__item_03">
+                  ${quantityThirdProduct} </div>
+            </div>
+         </div>
+         <div class="shop-receip__total">
+            Сумма ${totalAmount}
+         </div>
+      </div>
+  `)
+
+
+ 
+   </script>
+
+      </main>
+  
+ 
+
+</div>
+</body>
+</html>
