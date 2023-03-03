@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 13</h2>
+
+
+   <script>
+      //13. Морський бій. Комп’ютер випадково розташовує одиночний корабель на полі розміром N*M. Маючи К снарядів користувач намагається потопити корабель. 
+let numberOfShells = parseInt(prompt("Введіть кількість снарядів", "1"))
+
+let xAxisPositionShip = Math.floor(Math.random() * 10 + 1)
+let yAxisPositionShip = Math.floor(Math.random() * 10 + 1)
+let projectileAtPositionX 
+let projectileAtPositionY
+for (let i = 0; i < numberOfShells; i++) {
+    projectileAtPositionX = parseInt(prompt("Введіть удар по позиції X від 1 -10", "1")) 
+    projectileAtPositionY = parseInt(prompt("Введіть удар по позиції Y від 1 -10", "1")) 
+   if(projectileAtPositionX > 10 && projectileAtPositionY > 10){ confirm("прошу введіть коректні данні")
+   break;
+}
+  
+     else if (xAxisPositionShip===projectileAtPositionX && yAxisPositionShip === projectileAtPositionY){
+      document.write(`Вітаю ви попали`)
+      break;
+    }
+    
+    
+}
+if(!(xAxisPositionShip===projectileAtPositionX && yAxisPositionShip === projectileAtPositionY))
+document.write(`Cпробуйте ще раз`)
+
+
+   </script>
+
+      </main>
+  
+ 
+
+</div>
+</body>
+</html>

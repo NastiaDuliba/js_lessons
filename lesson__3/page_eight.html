@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 8</h2>
+        
+   <script>
+ //Користувач загадує число. За 3 спроби комп’ютер намагається вгадати число користувача (використати confirm).
+//0 max min n counter
+
+let firstQuestion = confirm("загадайте число від 1 - 10")
+
+let randomNumber = 1 + Math.floor(Math.random()* 10)
+
+
+
+for (let i = 0; i < 3; i++) {
+
+let randomNumber = 1 + Math.floor(Math.random()* 10)
+
+  let secondQuestion = confirm(`Ваше число ${randomNumber}?`)
+
+  if(secondQuestion){ 
+
+  document.write(`Ваше число ${randomNumber}`)
+
+  alert("Вгадано")
+
+  break;
+  
+  }
+   else {  alert("спробую ще раз")
+   for (let j = 0; j === i; j++ ) 
+   document.write(`Вибачте не вгадали`)
+    
+      
+   
+}
+     
+      
+
+      
+      
+}
+
+
+
+
+
+
+   </script>
+
+      </main>
+  
+ 
+
+</div>
+</body>
+</html>

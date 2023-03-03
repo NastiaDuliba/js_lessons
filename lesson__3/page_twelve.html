@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 12</h2>
+
+
+   <script>
+      //Задача 12. Ігровий автомат. Випадково вибираємо зображення у 3 позиціях. Вибір у кожній позиції вибирається як одне з чотирьох зображень. Вивести ці зображення і повідомити виграш користувача (три перших зображення 100 грн, три других – 200, три третіх – 500, три четвертих зображення – 1000грн). Використати цикли і switch (для вибору зображення за номером).
+
+let ramdomImage
+let coconutImg = 0
+let pearImg= 0
+let pinepleImg = 0
+let watermelonImg = 0
+
+      for (let i = 0; i < 3; i++) {
+        ramdomImage =  Math.floor(Math.random() * 4 +1 )
+      switch (ramdomImage) {
+   case 1:{ coconutImg ++
+      document.write(`<img src="img/task_5/img_1.png" alt="">`)}
+      break;
+      case 2:{  pearImg++
+       document.write(`<img src="img/task_5/img_2.png" alt="">`)}
+     
+      break;
+      case 3:{++pinepleImg
+       document.write(`<img src="img/task_5/img_3.png" alt="">`)}
+       break;
+      case 4:{++watermelonImg
+          document.write(`<img src="img/task_5/img_4.png" alt="">`)}
+      break;
+   default:
+      break;
+}        
+        
+      }
+      if (coconutImg === 3)
+   document.write(`<br>Вітаю ви виграли 100 грн`)
+   else if ( pearImg ===3)
+   document.write(`<br> Вітаю ви виграли 200 грн`)
+  else if (pinepleImg === 3)
+  document.write(`<br> Вітаю ви виграли 500 грн`)
+  else if (watermelonImg===3)
+  document.write(`<br> Вітаю ви виграли 1000 грн`)
+else
+document.write(`<br> Вибачте попробуйте ще `)
+
+
+
+   </script>
+
+      </main>
+  
+ 
+
+</div>
+</body>
+</html>

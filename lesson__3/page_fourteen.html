@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 14</h2>
+
+
+   <script>
+      //14. Каса. Користувачу повідомляють суму, яку йому треба сплатити. Користувач поступово вводить суму грошей до тих пір, поки суми не буде достатньо для оплати товарів (кожного разу користувачу повідомляють, яку ще суму потрібно ввести). 
+   let initialAmount = 300
+let amountPaid = 0
+let firstMessage = confirm(`Ви повинні сплатити ${initialAmount} сумму можна частинами`)
+
+do {
+   let amountEntered = parseInt(prompt("Введіть  сумму платежу", "0"))
+   
+   amountPaid += amountEntered
+   let balanceOfPayment = initialAmount - amountPaid
+
+
+   let secondQuestion = confirm(`Ви повинні сплатити  ще ${balanceOfPayment} `)
+
+} while (amountPaid < initialAmount );
+
+
+
+
+
+   </script>
+
+      </main>
+  
+ 
+
+</div>
+</body>
+</html>
