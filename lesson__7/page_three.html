@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 3</h2>
+         
+      
+   <script>
+    
+     //Задача 2. Створити функцію, яка за номером дня дозволяє з’ясувати чи є цей день робочим.
+     let numDay  = parseInt(prompt("Введіть номер дня", "0")) 
+     function getNumWorkDay (){
+      let result
+      switch (numDay) {
+         case 1: 
+         case 2: 
+         case 3: 
+         case 4: 
+         case 5: result = "Робочий день";
+         break; 
+         case 6: 
+         case 7: result  = "вихідний";
+            break;
+         default: result = "Такого дня немає";
+            break;
+      }
+      return result
+     }
+  
+     document.write(getNumWorkDay())
+   </script>
+
+      </main>
+   
+
+</div>
+</body>
+</html>

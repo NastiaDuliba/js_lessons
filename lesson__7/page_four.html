@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 4</h2>
+   
+   <script>
+    
+     // Задача 3. Створити окремі функції, які для 4 чисел знаходять:
+     //1)суму;
+      //2)добуток;
+      //3)середнє арифметичне;
+      //4)мінімальне значення. 
+      let firstNumber = parseInt(prompt("Перше число", "0"))
+      let secondNumber = parseInt(prompt("Друге число", "0"))
+      let thirdtNumber = parseInt(prompt("Третє число", "0"))
+      let fourthNumber = parseInt(prompt("Четверте число", "0"))
+      function getSum(a, b, c, d){
+         return a + b + c +d;
+      }
+function getMultiplication(a, b, c, d){
+   return a * b * c * d
+}
+function getAverageValue( a, b, c, d){
+   return (a + b + c + d)/4
+}
+function getMinimumvValue(a, b, c, d) {
+   let firstMinimalValue 
+   let secondMinimalValue
+   let finalMinimalValue
+   if(a > b)
+      firstMinimalValue = b
+      else
+      firstMinimalValue = a 
+      if(c > d)
+      secondMinimalValue = d
+      else
+      secondMinimalValue = c
+      if( firstMinimalValue > secondMinimalValue)
+      finalMinimalValue = secondMinimalValue
+      else
+      finalMinimalValue = firstMinimalValue 
+      return finalMinimalValue
+}
+document.write(`Cумма ${getSum(firstNumber, secondNumber, thirdtNumber, fourthNumber)} <br>`)
+document.write(`Добуток ${getMultiplication(firstNumber, secondNumber, thirdtNumber, fourthNumber)} <br>`)
+document.write(`Середнє арифметичне ${getAverageValue(firstNumber, secondNumber, thirdtNumber, fourthNumber)} <br>`)
+document.write(`Мінімальне значення ${getMinimumvValue(firstNumber, secondNumber, thirdtNumber, fourthNumber)} <br>`)
+
+     
+   </script>
+
+      </main>
+   
+
+</div>
+</body>
+</html>
