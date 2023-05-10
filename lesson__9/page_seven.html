@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 7</h2>
+        
+   <script>
+//7.Дано масив цін. Змінити цей масив так, що на ціни товарів, які більші за 1000 грн. дати 30% знижки.
+function getUserArrPrice() {
+   let numberArrays  = parseInt(prompt("Введіть кількість товарів"))
+let arr = []
+   for (let i = 0; i < numberArrays; i++) {
+     let  userArr = parseInt(prompt("Введіть ціни на товари"))
+     arr.push(userArr)
+   
+      
+   }
+  return arr
+   
+ }
+
+let allЕlementsArrPrice = getUserArrPrice()
+allЕlementsArrPrice.forEach((element,index,baseRef)=>{
+   if (element>= 1000) {
+      baseRef[index]= parseInt(element-(element * 0.3))
+
+      
+   }
+})
+console.log(allЕlementsArrPrice);
+//let highPrices = allЕlementsArrPrice.filter(item  => item >= 1000)
+
+//let discount = highPrices.map((element) => parseInt(element-(element * 0.3)))
+//console.log(discount);
+   
+
+
+   </script>
+
+      </main>
+  
+ 
+
+</div>
+</body>
+</html>

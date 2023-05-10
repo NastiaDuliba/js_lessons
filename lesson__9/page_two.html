@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 2</h2>
+       
+
+   <script>
+//2. Користувач вводить кількість елементів. Створити масив, у якому перша половина заповнена 1-цями, а друга заповнена 7-ками.
+let userNumberElements = parseInt(prompt("кількість елементів"))
+
+let getHalfData = x => Math.floor(x / 2)
+let halfData = getHalfData(userNumberElements)
+
+let arr2 = new Array (userNumberElements).fill(1,0,halfData)
+let arr3 =  arr2.fill(7, halfData)
+document.write(arr3)
+
+console.log(arr3);
+   </script>
+
+      </main>
+   
+
+</div>
+</body>
+</html>

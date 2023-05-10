@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 6</h2>
+        
+        
+   <script>
+//6.Дано масив елементів. Усі елементи, які більші за перший елемент помножити на 2
+function getUserArr() {
+   let numberArrays  = parseInt(prompt("Введіть кількість елементів"))
+let arr = []
+   for (let i = 0; i < numberArrays; i++) {
+     let  userArr = parseInt(prompt("Введіть елементи масивів"))
+     arr.push(userArr)
+   
+      
+   }
+  return arr
+   
+ }
+
+let allЕlementsArr = getUserArr()
+let arrProduct = allЕlementsArr.filter((element, index, baseArr) =>
+element > baseArr[index = 0]
+
+)
+arrProduct.forEach((item, index, baseArr) => baseArr[index]=  item *2
+)
+
+console.log(arrProduct);
+
+
+
+   </script>
+
+      </main>
+   
+
+</div>
+</body>
+</html>
