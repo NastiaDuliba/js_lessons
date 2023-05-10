@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 4</h2>
+   
+   <script>
+    
+//    Задача 4. Дано послідовність номерів автомобілів. Підрахувати кількість номерів, які :
+//•	починаються на букву «А»;
+//•	перша і остання літери співпадають;
+//•	складаються з більше ніш 5 символів;
+let arrayCarNumbers = [
+   "BK4649IС",
+   "AH3795OB",
+   "AI0431YA",
+   "AC2141HB",
+   "CB7151EI",
+   "AA7000MB",
+   "KA7777HX",
+   "DC4343BV"
+]
+let firstLetterRequired = "A"
+let fewerCharacters = 5
+//•	починаються на букву «А»;
+function getFirstLettersMatch(carNum,letterRequired) {
+   counter = 0
+   for (let i = 0; i < arrayCarNumbers.length; i++) {
+
+      if (arrayCarNumbers[i][0] === firstLetterRequired) {
+         counter++
+      }
+      
+   }
+   return  counter
+}
+console.log(getFirstLettersMatch( arrayCarNumbers,firstLetterRequired ));
+
+
+//•	перша і остання літери співпадають;
+function getFirstLetterLastSimilar(CarNum) {
+  let counter = 0
+   for (let i = 0; i < arrayCarNumbers.length; i++) {
+      if (arrayCarNumbers[i][0] === arrayCarNumbers[i][arrayCarNumbers[i].length -1]) {
+         counter++
+      }
+      
+   }
+   return counter
+}
+console.log(getFirstLetterLastSimilar(arrayCarNumbers));
+
+
+//•	складаються з більше ніш 5 символів;
+function getFewerCharacters(numberСharacter, carNum ) {
+   let counter = 0
+   for (let i = 0; i < arrayCarNumbers.length; i++) {
+      if (arrayCarNumbers.length >fewerCharacters ) {
+counter++
+         
+      }
+      
+   }
+   return counter
+}
+console.log(getFewerCharacters(arrayCarNumbers, fewerCharacters ));
+
+   </script>
+
+      </main>
+   
+
+</div>
+</body>
+</html>

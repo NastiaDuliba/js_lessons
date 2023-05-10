@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 8</h2>
+         
+       
+        
+   <script>
+   // Задача 8. Дано одновимірний масив, у якому зберігається певна виграшна сума (елементи заповнюються випадковим чином значеннями від -500 до 500). Надаючи користувачу можливість вибирати номери елементів  (поки він не відмовиться). Знаходити сумарний виграш.
+  
+   function getwWinningAmount() {
+      let min = -500
+      let max = 500
+      let arrWinningAmount =[]
+      for (let i = 0; i < 50; i++) {
+         let winningAmount = min +Math.floor(Math.random() * ((max - min )))
+         arrWinningAmount.push(winningAmount)
+      }
+
+      return arrWinningAmount
+   }
+   let winningAmount = getwWinningAmount()
+   function sumWinningAmount() {
+     
+      
+         let sumPlayerTicket =0
+         let playerTicket
+     end: for (let i = 0; i < winningAmount.length; i++) {
+        
+        
+    let question= confirm("Ви бажаєте грати?")
+         if (question) {
+        
+            let ticketIssue = parseInt(prompt("Виберіть білет від 1- 50", ""))
+            playerTicket = winningAmount[ticketIssue]
+            sumPlayerTicket += playerTicket
+            let benefit = confirm(`ваш виграш ${ playerTicket}`)
+         }
+         else if(question == false){
+            break end
+         }
+      }
+      return sumPlayerTicket
+   }
+
+  document.write(sumWinningAmount());
+   </script>
+
+      </main>
+  
+ 
+
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 6</h2>
+        
+        
+   <script>
+//Задача 6. Дано послідовність цін товарів та назв (у окремих масивах). Вивести на екран ті, які може собі дозволити користувач (кількість грошей задається).
+
+let productsPrices = [100, 20, 31, 53, 45, 3]
+let productsTitles = ["cheese ", "juice ", "bread ", "milk ","fruits ", "water"]
+let  amountMoneyUserHas = parseInt(prompt(`Ведіть кількість грошей`))
+
+function getWhatProductsCanBeBought(product, price) {
+   let  WhatProductsCanBeBought = []
+   for (let i = 0; i < productsPrices.length; i++) {
+      if (productsPrices[i] < amountMoneyUserHas) {
+         amountMoneyUserHas -=productsPrices[i]
+         WhatProductsCanBeBought += productsTitles[i]
+      }
+      
+   }
+   return WhatProductsCanBeBought
+}
+
+document.write(getWhatProductsCanBeBought(productsPrices, amountMoneyUserHas));
+   </script>
+
+      </main>
+   
+
+</div>
+</body>
+</html>

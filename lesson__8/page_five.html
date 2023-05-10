@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 5</h2>
+         
+   <script>
+//   Задача 5. Дано послідовність оцінок учня. Підрахувати кількість:
+//1)	двійок
+//2)	кількість хороших оцінок (добре, відмінно);
+//3)	кількість оцінок, які нижче середнього.
+let arrayStudentGrades = [4, 5, 3,4,2,2,3,5,5,4]
+
+
+//1)	двійок
+function getNumberGradesTwo(studentGrade) {
+  let counter = 0  
+   for (let i = 0; i < arrayStudentGrades.length; i++) {
+   if (arrayStudentGrades[i]===2) {
+      counter++
+   }
+      
+   }
+   return counter
+   
+}
+console.log(getNumberGradesTwo(arrayStudentGrades) );
+
+
+
+//2)	кількість хороших оцінок (добре, відмінно);
+function getNumberGoodGrades(studentGrade) {
+  let counter = 0
+   for (let i = 0; i < arrayStudentGrades.length; i++) {
+      if ( arrayStudentGrades[i] === 4 || arrayStudentGrades[i] === 5 ) {
+         counter++
+      }
+      
+   }
+   return counter
+}
+console.log( getNumberGoodGrades(arrayStudentGrades));
+
+
+//3)	кількість оцінок, які нижче середнього.
+function  numberGradesBelowAverage(studentGrade) {
+   let counter = 0
+
+   for (let i = 0; i <arrayStudentGrades.length; i++) {
+     if (arrayStudentGrades[i] < 4 ) {
+      counter++
+     }
+      
+   }
+   return counter
+   
+}
+console.log(numberGradesBelowAverage(arrayStudentGrades));
+
+    
+   </script>
+
+      </main>
+   
+
+</div>
+</body>
+</html>

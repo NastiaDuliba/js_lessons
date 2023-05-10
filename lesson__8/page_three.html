@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 3</h2>
+         
+      
+   <script>
+    
+    //Задача 3. Дано масив імен учнів. З’ясувати скільки разів зустрічається ім’я «Іван».
+
+      let nameStudents = ["Іван", "Степан", "Микола", "Іван", "Букачек", "Котек","Діма"]
+     let nameIsRequired = "Іван"
+      function getQuantityRequiredName(nameStudentsAll, nameRequired) {
+         let quantityRequiredName =[]
+         for (let i = 0; i < nameStudents.length; i++) {
+            if ( nameStudents[i]=== nameIsRequired) {
+               quantityRequiredName.push(i+1)
+               
+            }
+            
+         }
+         return quantityRequiredName
+
+         
+      }
+console.log(getQuantityRequiredName(nameStudents, nameIsRequired));
+
+
+   </script>
+
+      </main>
+   
+
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 7</h2>
+        
+   <script>
+//Задача 7. Дано послідовність платіжок протягом року. Знайти сумарну кількість грошей за:
+//за весь рік;
+//у першій половині року;
+//у другій половині року;
+//за літо;
+//за ІІ квартал;
+//за парні місяці (з парними номерами);
+//за місяці, які є початковими у сезоні (весна, літо, осінь, зима).
+
+
+
+
+function getArrPayments(months) {
+   let arrPayments =[]
+   for (let i = 0; i <  months; i++) {
+     let arrPaymentsAll = parseInt(prompt(`Введіть платіжку за ${i +1} місяць`))
+     arrPayments.push(arrPaymentsAll)
+   }
+
+
+   return arrPayments 
+}
+
+let paymentsList = getArrPayments(12) 
+
+
+
+//за весь рік;
+function getPaymentsSum( paymentList, startMonth, endMonth) {
+   let sum = 0
+   for (let i = startMonth; i <=endMonth; i++) {
+      sum += paymentsList[i-1]
+      
+   }
+   return sum
+}
+//у першій половині року;
+
+console.log(getPaymentsSum(paymentsList, 1, 6) );
+
+//у другій половині року;
+console.log(getPaymentsSum(paymentsList, 7, 12) );
+
+
+//за літо;
+console.log(getPaymentsSum(paymentsList, 6, 8) );
+
+//за ІІ квартал;
+console.log(getPaymentsSum(paymentsList, 4, 6) );
+
+
+//за парні місяці (з парними номерами);
+function getEvenMonths(paymentLists) {
+   let sum = 0
+   for (let i = 0; i < paymentsList.length; i++) {
+    if (i % 2 ===0) {
+      sum += paymentsList[i]
+      
+    }
+      
+   }
+   return sum
+   
+}
+
+console.log(getEvenMonths(paymentsList ));
+
+//за місяці, які є початковими у сезоні (весна, літо, осінь, зима).
+function getMonthBeginningSeason(paymentLists) {
+   let sum = 0
+   for (let i = 0; i < paymentsList.length; i++) {
+      if (i % 3 === 0 ) {
+         sum +=paymentsList[i]
+         
+      }
+      
+   }   
+   return sum
+}
+console.log(getMonthBeginningSeason(paymentsList ));
+
+
+   </script>
+
+      </main>
+  
+ 
+
+</div>
+</body>
+</html>

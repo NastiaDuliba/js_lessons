@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+   <title>Lesson 3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main__container">
+         <h2>завдання № 1</h2>
+         
+        
+   <script>
+//Задача 1. Дано масив, який містить оцінки з К предметів. Знайти середній бал і з’ясувати до якої категорії він відноситься (відмінник, двійочник (має хоча би одну двійку), хорошист (оцінки добре і відмінно), трійочник(є хоча би одна трійка)).
+document.write('Відповідь в консолі')
+
+function getAllScore() {
+   let numberScore = parseInt(prompt(`введіть кількість оцінок`))
+   let allScore =[]
+for (let i = 1; i <= numberScore; i++) {
+   let allScoreUser  = parseInt(prompt(`Введіть оцінку ${i}`))
+   allScore.push(allScoreUser)
+}
+return allScore 
+}
+
+let  allScoreTogether =  getAllScore()
+function getaAverageScore() {
+   let sumScore = 0
+   for (let i = 0; i < allScoreTogether.length; i++) {
+      sumScore +=  allScoreTogether[i]
+      
+   }
+   let numberScore = allScoreTogether.length
+   let averageScore =  sumScore / numberScore
+   return  averageScore
+}
+function getMinMark() {
+   let minMark =  allScoreTogether[0]
+   for (let i = 0; i < allScoreTogether.length; i++) {
+      if ( minMark > allScoreTogether[i] ) {
+         minMark =  allScoreTogether[i] 
+         
+      }
+      
+   }
+   return minMark 
+}
+let  studentRatingScore = getMinMark()
+function getStudentRating() {
+   let result
+   switch (studentRatingScore) {
+      case 1: 
+      case 2: result =  "двійочник"
+      break;
+      case 3: result = "трійочник"
+      break;
+      case 4: result = "xорошист"
+      case 5:   result = "відмінник"
+      break;
+        
+      default: result = "error"
+         break;
+   }
+   return result
+}
+console.log(getStudentRating());
+
+
+
+   </script>
+
+      </main>
+   
+
+</div>
+</body>
+</html>
